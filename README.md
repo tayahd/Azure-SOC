@@ -33,16 +33,17 @@ In the "AFTER" metrics analysis, Network Security Groups were hardened by restri
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://github.com/tayahd/Azure-SOC/assets/162353295/6e72cda0-0444-408d-b11f-80836f016743)
-)<br>
+<br>
 ![Linux Syslog Auth Failures](https://github.com/tayahd/Azure-SOC/assets/162353295/e5544561-ff10-4b00-b2c1-707f05cf104c)
 <br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/tayahd/Azure-SOC/assets/162353295/94ec82a1-7977-40e6-b11c-daece4a42ee4)
+<br>
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2/26/2024 19:52:45
-Stop Time 2/27/2024 19:52:45
+Start Time 3/3/2024 21:25:19
+Stop Time 3/4/2024 21:25:19
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -50,11 +51,11 @@ Stop Time 2/27/2024 19:52:45
 | Syslog                   | 11241
 | SecurityAlert            | 4
 | SecurityIncident         | 210
-| AzureNetworkAnalytics_CL | 2236
+| AzureNetworkAnalytics_CL |2236
 
 ## Attack Maps Before Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```All map queries actually returned no results due to little to no instances of malicious activity for the 24 hour period after hardening.```
 
 ## Metrics After Hardening / Security Controls
 
@@ -64,10 +65,10 @@ Stop Time	2023-03-19 15:37
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
-| SecurityAlert            | 0
-| SecurityIncident         | 0
+| SecurityEvent            | 43326
+| Syslog                   | 1
+| SecurityAlert            | 1
+| SecurityIncident         | 9
 | AzureNetworkAnalytics_CL | 0
 
 ## Conclusion
